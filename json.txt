@@ -1,0 +1,2483 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "How are you",
+                                "Is anyone there?",
+                                "Hello",
+                                "helo",
+                                "hie",
+                                "Good day",
+                                "hey",
+                                "category"
+                        ],
+                        "responses": [
+                                "Hello! Please select category so that i can help you? \n1.COURSE and DEPARTMENT, \n2.ADMISSION, \n3.COUNCIL and COMMITTEES, \n4.CONTACT, \n5.PLACEMENT and INTERNSHIP, \n6.OTHER "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "greeting2",
+                        "patterns": [
+                                "How are you",
+                                "whats up"
+                        ],
+                        "responses": [
+                                "all good. Please select category so that i can help you? \n1.COURSE and DEPARTMENT,\n2.ADMISSION,\n3.COUNCILS,\n4.CONTACT ,\n5.OTHER "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "cya",
+                                "see you",
+                                "bye bye",
+                                "See you later",
+                                "Goodbye",
+                                "I am Leaving",
+                                "Bye",
+                                "Have a Good day",
+                                "talk to you later",
+                                "ttyl",
+                                "i got to go",
+                                "gtg",
+                                "exit"
+                        ],
+                        "responses": [
+                                "Goodbye! Thank you for visiting us(type 'quit' to exit)",
+                                "Thank you for visiting us,Come back soon(type 'quit' to exit)",
+                                "Have good day! Thank you for visiting us(type 'quit' to exit)"
+                        ],
+                        "context_set": ""
+                },
+
+
+
+                {
+                        "tag": "course",
+                        "patterns": [
+                                "1",
+                                "list of courses",
+                                "list of courses offered",
+                                "list of courses offered in UMIT",
+                                "what are the courses offered in your college?",
+                                "courses",
+                                "course",
+                                "department",
+                                "COURSE and DEPARTMENT",
+                                "courses offered",
+                                "courses offered in UMIT",
+                                "courses you offer",
+                                "branches?",
+                                "courses available at UMIT?",
+                                "branches available at UMIT",
+                                "what are the courses in UMIT?",
+                                "what are branches in UMIT?",
+                                "what are courses in UMIT?",
+                                "branches available in UMIT?",
+                                "can you tell me the courses available in UMIT?",
+                                "Syllabus",
+                                "Which degree is provided by the institute",
+                                "can you tell me the branches available in UMIT?"
+                        ],
+                        "responses": [
+                                "UMIT offers B.Tech following courses:- \n1.a.Computer Engineering,  \n1.b.Information Technology, \n1.c.Computer Science and Technology Engineering, \n1.d.Data Sciences.\n1.e.Electronics & Communication Engineering, \n1.f.General Engineering and Applied Science \nTo know about particular course enter name or number given to the course"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CE",
+                        "patterns": [
+                                "CE",
+                                "1.a",
+                                "Computer Engineering"
+                        ],
+                        "responses": [
+                                "select exactly what do you wanna know Computer Engineering: \na1.general information of CE, \na2.faculty of CE, \na3.syllabus of CE, \na4.hod of CE"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CE-GENERAL",
+                        "patterns": [
+                                "a1",
+                                "general information of CE",
+                                "general information of ce",
+                                "general information of computer engineering"
+                        ],
+                        "responses": [
+                                "Follow this link to know about Computer Engineering :-\nhttps://www.umit.ac.in/computer-engineering  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CE-FACULTY",
+                        "patterns": [
+                                "a2",
+                                "faculty of CE"
+                        ],
+                        "responses": [
+                                "Follow this link to know about Faculty of Computer Engineering :- \nhttps://www.umit.ac.in/ce-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CE-SYLLABUS",
+                        "patterns": [
+                                "a3",
+                                "syllabus of CE"
+                        ],
+                        "responses": [
+                                "Follow this link to know about Syllabus of Computer Engineering :- \nhttps://www.umit.ac.in/_files/ugd/db66c0_08c444b835754a9aa528c110b60619aa.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                
+                        "tag":"CE-HOD",
+                        "patterns":[
+                                "a4",
+                                "hod of CE",
+                                "ce hod",
+                                "hod of computer engineering"
+                        ],
+                        "responses":[
+                                "The HOD of Computer Engineering is Dr. Rachana Dhannawat "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT",
+                        "patterns": [
+                                "1.b",
+                                "IT",
+                                "Information Technology"
+                        ],
+                        "responses": [
+                                "Select Category you wanna know: \nb1.general information of IT,\nb2.faculty of IT,\nb3.Time table of IT,\nb4.Syllabus of IT, \nb5.Course objective of IT,\nb6. hod of IT"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-GENERAL",
+                        "patterns": [
+                                "b1",
+                                "general information of IT",
+                                "general information of it",
+                                "general information of information technology"
+                        ],
+                        "responses": [
+                                "Follow this link to know about Information Technology :-\nhttps://www.umit.ac.in/information-technology  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-FACULTY",
+                        "patterns": [
+                                "b2",
+                                "faculty of it"
+                        ],
+                        "responses": [
+                                "Follow this link to know about Faculty of Information Technology :-\nhttps://www.umit.ac.in/it-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-TT",
+                        "patterns": [
+                                "b3",
+                                "Timetable of it",
+                                "Timetable information technology",
+                                "information technology tt",
+                                "Information technology tt",
+                                "IT TT",
+                                "tt of it"
+                        ],
+                        "responses": [
+                                "Select Year:-\n second year of it, \n third year of it, \n final year of it"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-secondyear",
+                        "patterns": [
+                                "second year of it",
+                                "2nd year of it",
+                                "tt of second year it",
+                                "tt of 2nd year of it"
+                        ],
+                        "responses": [
+                                "select sem:-\n third sem of it, \n fourth sem of it"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-third sem",
+                        "patterns": [
+                                "third sem of it",
+                                "3rd sem of it",
+                                "tt of sem 3 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 3rd sem ,2nd year of IT:-\nhttps://www.umit.ac.in/_files/ugd/76b289_a71dbd9e582847038d226a17e25bc4e7.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-fourth sem",
+                        "patterns": [
+                                "fourth sem of it",
+                                "4th sem of it",
+                                "tt of sem 4 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 4th sem ,2nd year of IT:-\nhttps://www.umit.ac.in/_files/ugd/76b289_08c5de75929d488b857bf8c0dc62c4.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-thirdyear",
+                        "patterns": [
+                                "third year of it",
+                                "3rd year of it",
+                                "tt of 3rd year of it",
+                                "tt of third year it"
+                        ],
+                        "responses": [
+                                "select sem:-\n fifth sem of it, \n sixth sem of it"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-fifth sem",
+                        "patterns": [
+                                "fifth sem of it",
+                                "5th sem of it",
+                                "tt of sem 5 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 5th sem ,3rd year of IT:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_bc8d94c004cd4b3aa69d81dff8e1c112.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-sixth sem",
+                        "patterns": [
+                                "sixth sem of it",
+                                "6th sem of it",
+                                "tt of sem 6 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 6th sem ,3rd year of IT:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_6f0fee1bc3ce44eba9e3cf86dda3e238.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-finalyear",
+                        "patterns": [
+                                "final year of it",
+                                "4th year of it",
+                                "tt of 4th year it",
+                                "tt of final year it",
+                                "tt of fourth year it"
+                        ],
+                        "responses": [
+                                "select sem:-\n seventh sem of it, \n eighth sem of it"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-seven sem",
+                        "patterns": [
+                                "seventh sem of it",
+                                "7th sem of it",
+                                "tt of sem 7 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 7th sem ,final year of IT:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_ef14ed2b56784de5a8f7bf1c65c1b155.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-eighth sem",
+                        "patterns": [
+                                "eighth sem of it",
+                                "8th sem of it",
+                                "tt of sem 8 of it"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 8th sem ,final year of IT:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_fb8e8d94d738485caba7f6f6caf4fbde.pdf "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT_SYLLABUS",
+                        "patterns": [
+                                "b4",
+                                "syllabus of IT"
+                        ],
+                        "responses": [
+                                "follow this link to know about Syllabus of Information Technology :-\nhttps://www.umit.ac.in/_files/ugd/db66c0_e0de0a85cd87496da41b817ae672ae30.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT-COURSE OBJECTIVE",
+                        "patterns": [
+                                "b5",
+                                "course objective of IT"
+                        ],
+                        "responses": [
+                                "follow this link to know about Objective of Information Technology :-\nhttps://www.umit.ac.in/_files/ugd/896af0_15154278a12646cfa147f003adc5ea23.pdf "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"IT-HOD",
+                        "patterns":[
+                          "b6",
+                          "hod of IT",
+                          "it hod",
+                          "hod of information technology"
+            
+                        ],
+                        "responses":[
+                          "The HOD of Information Technology is Dr. Sanjay S. Shitole  "
+                        ],
+                        "context_set": ""
+                      },
+            
+                {
+                        "tag": "CST",
+                        "patterns": [
+                                "CST",
+                                "1.c",
+                                "Computer Science and Technology"
+                        ],
+                        "responses": [
+                                "select exactly what do you wanna know: \nc1.general information of CST,\nc2.faculty of CST,\nc3.Time table of CST,\nc4.Syllabus of CST,\nc5.Course objective of CST,\nc6. hod of CST"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-GENERAL",
+                        "patterns": [
+                                "c1",
+                                "general information of CST",
+                                "general information of cst",
+                                "general information of computer science and technology"
+                        ],
+                        "responses": [
+                                "follow this link to know about Computer Science and Technology :-https://www.umit.ac.in/computer-science-and-technology  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-FACULTY",
+                        "patterns": [
+                                "c2",
+                                "faculty of cst"
+                        ],
+                        "responses": [
+                                "follow this link to know about Faculty of Computer Science and Technology :- https://www.umit.ac.in/cst-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-TT",
+                        "patterns": [
+                                "c3",
+                                "Timetable of cst",
+                                "Timetable computer science and technology",
+                                "computer science and technology tt",
+                                "computer science and technology tt",
+                                "CST TT",
+                                "tt of cst"
+                        ],
+                        "responses": [
+                                "select year:-\n second year of cst, \n third year of cst, \n final year of cst"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-secondyear",
+                        "patterns": [
+                                "second year of cst",
+                                "2nd year of cst",
+                                "tt of 2nd year cst",
+                                "tt of second year cst"
+                        ],
+                        "responses": [
+                                "select sem:-\n third sem of cst, \n fourth of sem cst"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-third sem",
+                        "patterns": [
+                                "sem third of cst",
+                                "third sem of cst",
+                                "3rd sem of cst",
+                                "tt of sem 3 of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 3rd sem ,2nd year of CST:-\nhttps://www.umit.ac.in/_files/ugd/76b289_515ea2f1617c4ceb83f8350e12dd5f07.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-fourth sem",
+                        "patterns": [
+                                "sem fourth of cst",
+                                "fourth sem of cst",
+                                "4th sem of cst",
+                                "tt of sem 4 of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 4th sem ,2nd year of CST:-\nhttps://www.umit.ac.in/_files/ugd/76b289_0fdded23c9cf40d59f95efe8256ebf79.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-thirdyear",
+                        "patterns": [
+                                "third year of cst",
+                                "3rd year of cst",
+                                "tt of 3rd year cst",
+                                "tt of third of cst"
+                        ],
+                        "responses": [
+                                "select sem:-\n fifth sem of cst, \n sixth sem of cst"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-five sem",
+                        "patterns": [
+                                "sem fifith of cst",
+                                "fifth sem of cst",
+                                "5th sem of cst",
+                                "tt of sem 5 of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 5th sem ,3rd year of CST:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_606dd42a6803477f80e42646c5fea443.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-sixth sem",
+                        "patterns": [
+                                "sem sixth of cst",
+                                "sixth sem of cst",
+                                "6th sem of cst",
+                                "tt of sem 6 of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 6th sem ,3rd year of CST:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_50f1af18068e4cf8af2f1871f4023c9f.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-finalyear",
+                        "patterns": [
+                                "final year of cst",
+                                "4th year of cst",
+                                "tt of final year cst",
+                                "tt of fourth year cst",
+                                "tt of 4th year cst"
+                        ],
+                        "responses": [
+                                "select sem:-\n seventh sem of cst, \n eighth sem of cst"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-seventh sem",
+                        "patterns": [
+                                "sem seventh of cst",
+                                "seventh sem of cst",
+                                "7th sem of cst",
+                                "tt of sem 7 of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 7th sem ,final year of CST:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_f4837b5e08664f3887e8da4da6d3b875.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-eighth sem",
+                        "patterns": [
+                                "sem eighth of cst",
+                                "eighth sem of cst",
+                                "8th sem of cst",
+                                "tt of sem 8th of cst"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 8th sem ,final year of CST:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_f4837b5e08664f3887e8da4da6d3b875.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST_SYLLABUS",
+                        "patterns": [
+                                "c4",
+                                "syllabus of CST"
+                        ],
+                        "responses": [
+                                "follow this link to know about Syllabus of Computer Science and Technology :-\nhttps://www.umit.ac.in/_files/ugd/db66c0_7b74732f355b4fc28be05822f384663c.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CST-COURSE OBJECTIVE",
+                        "patterns": [
+                                "c5",
+                                "course objective of CST"
+                        ],
+                        "responses": [
+                                "follow this link to know about Objective of Computer Science and Technology :-\nhttps://www.umit.ac.in/_files/ugd/896af0_22a08c26ca2140c89e69471b58456925.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"CST-HOD",
+                        "patterns":[
+                          "c6",
+                          "hod of CST",
+                          "cst hod",
+                          "hod of computer science and technology"
+            
+                        ],
+                        "responses":[
+                          "The HOD of Computer Science and Technology is Mrs. Kumud D. Wasnik  "
+                        ],
+                        "context_set": ""
+                },
+
+
+                {
+                        "tag": "ENC",
+                        "patterns": [
+                                "ENC",
+                                "1.e",
+                                "Electronics and Communication"
+                        ],
+                        "responses": [
+                                "select exactly what do you wanna know: \ne1.general information of ENC,\ne2.faculty of ENC,\ne3.Time table of ENC,\ne4.Syllabus of ENC,\ne5.Course Objective of ENC, \ne6. hod of ENC"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-GENERAL",
+                        "patterns": [
+                                "e1",
+                                "general information of ENC",
+                                "general information of enc",
+                                "general information of electronics and communication"
+                        ],
+                        "responses": [
+                                "follow this link to know about Electronics and Communication :-https://www.umit.ac.in/electronics-and-communications  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-FACULTY",
+                        "patterns": [
+                                "e2",
+                                "faculty of enc"
+                        ],
+                        "responses": [
+                                "follow this link to know about Faculty of Electronics and Communication :- https://www.umit.ac.in/ee-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-TT",
+                        "patterns": [
+                                "e3",
+                                "Timetable of enc",
+                                "Timetable electronics and communication",
+                                "electronics and communication tt",
+                                "electronics and communication tt",
+                                "ENC TT",
+                                "tt of enc"
+                        ],
+                        "responses": [
+                                "select year:-\n second year of enc, \n third year of enc, \n final year of enc"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-secondyear",
+                        "patterns": [
+                                "second year of enc",
+                                "2nd year of enc",
+                                "tt of 2nd year enc",
+                                "tt of second year enc"
+                        ],
+                        "responses": [
+                                "select sem:-\n third sem of enc, \n fourth sem of enc"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-third sem",
+                        "patterns": [
+                                "third sem of enc",
+                                "3rd sem of enc",
+                                "tt of sem 3 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 3rd sem ,2nd year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/76b289_a9393a2a5a7a4d068bf7294a156f75d7.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-fourth sem",
+                        "patterns": [
+                                "fourth sem of enc",
+                                "4th sem of enc",
+                                "tt of sem 4 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 4th sem ,2nd year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/76b289_72254a8c4810453181a6bdfbc1d3a5f6.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-thirdyear",
+                        "patterns": [
+                                "third year of enc",
+                                "3rd year of enc",
+                                "tt of  3rd year enc",
+                                "tt of third year enc"
+                        ],
+                        "responses": [
+                                "select sem:-\n fifth sem of enc,\n sem sixth of enc"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-fifth sem",
+                        "patterns": [
+                                "fifth sem of enc",
+                                "5th sem of enc",
+                                "tt of sem 5 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 5th sem ,3rd year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_1b03167d4fe240b893fa1b2674cd58ab.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-sixth sem",
+                        "patterns": [
+                                "sixth sem of enc",
+                                "6th sem of enc",
+                                "tt of sem 6 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 6th sem ,3rd year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_19ebab3f2bb54efa8845c80c15a3c676.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-finalyear",
+                        "patterns": [
+                                "final year of enc",
+                                "4th year of enc",
+                                "tt of final year enc",
+                                "tt of 4th year enc",
+                                "tt of fourth year enc"
+                        ],
+                        "responses": [
+                                "select sem:-\n seventh sem of enc, \n eighth sem of enc"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-seventh sem",
+                        "patterns": [
+                                "seventh sem of enc",
+                                "7th sem of enc",
+                                "tt of sem 7 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 7th sem ,final year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_c5616ac20eba49d19416e596f058a244.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-eighth sem",
+                        "patterns": [
+                                "eighth sem of enc",
+                                "8th sem of enc",
+                                "tt of sem 8 of enc"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 8th sem ,final year of ENC:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_734d65fb6c69439ebdcc78d4f89853aa.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-SYLLABUS",
+                        "patterns": [
+                                "e4",
+                                "syllabus of ENC"
+                        ],
+                        "responses": [
+                                "follow this link to know about Syllabus of Electronics and Communication :-\nhttps://www.umit.ac.in/_files/ugd/db66c0_f3add53b8d9c4d82b64cf4c830152a7b.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ENC-COURSE OBJECTIVE",
+                        "patterns": [
+                                "e5",
+                                "course objective of ENC"
+                        ],
+                        "responses": [
+                                "follow this link to know about Objective of Electronics and Commincation :-\nhttps://www.umit.ac.in/_files/ugd/896af0_a27b56f6645b4d9aab52544b92cafe55.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"ENC-HOD",
+                        "patterns":[
+                                "e6",
+                                "hod of ENC",
+                                "enc hod",
+                                "hod of computer electronics and communication"
+                
+                        ],
+                        "responses":[
+                                 "The HOD of electronics and communication is Dr. Shikha Nema  "
+                        ],
+                        "context_set": ""
+                },
+
+                {
+                        "tag": "DS",
+                        "patterns": [
+                                "DS",
+                                "1.e",
+                                "Data Science"
+                        ],
+                        "responses": [
+                                "select exactly what do you wanna know: \nd1.general information of DS,\nd2.faculty of DS,\nd3.Time table of DS,\nd4.Syllabus of DS,\nd5. hod of DS"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-GENERAL",
+                        "patterns": [
+                                "d1",
+                                "general information of DS",
+                                "general information of ds",
+                                "general information of data science"
+                        ],
+                        "responses": [
+                                "follow this link to know about Data Science :-https://www.umit.ac.in/data-science  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-FACULTY",
+                        "patterns": [
+                                "d2",
+                                "faculty of ds"
+                        ],
+                        "responses": [
+                                "follow this link to know about Faculty of Data Science :- https://www.umit.ac.in/ds-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-TT",
+                        "patterns": [
+                                "d3",
+                                "Timetable of ds",
+                                "Timetable data science",
+                                "data science tt",
+                                "data science tt",
+                                "DS TT",
+                                "tt of ds"
+                        ],
+                        "responses": [
+                                "select year:-\nsecond year of ds, \nthird year of ds, \n final year of ds"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-secondyear",
+                        "patterns": [
+                                "second year of ds",
+                                "2nd year of ds",
+                                "tt of 2nd year of ds",
+                                "tt of second year of ds"
+                        ],
+                        "responses": [
+                                "select sem:-\n third sem of ds, \n fourth sem of ds"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-third sem",
+                        "patterns": [
+                                "third sem of ds",
+                                "3rd sem of ds",
+                                "tt of sem 3 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 3rd sem ,2nd year of DS:-\nhttps://www.umit.ac.in/_files/ugd/76b289_a71dbd9e582847038d226a17e25bc4e7.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-fourth sem",
+                        "patterns": [
+                                "fourth sem of ds",
+                                "4th sem of ds",
+                                "tt of sem 4 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 4th sem ,2nd year of DS:-\nhttps://www.umit.ac.in/_files/ugd/76b289_08c5de75929d488b857ba4f8c0dc62c4.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-thirdyear",
+                        "patterns": [
+                                "third year of ds",
+                                "3rd year of ds",
+                                "tt of 3rd year ds",
+                                "tt of third year ds"
+                        ],
+                        "responses": [
+                                "select sem:-\n fifth sem of ds, \n sixth sem of ds"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-fifth sem",
+                        "patterns": [
+                                "fifth sem of ds",
+                                "5th sem of ds",
+                                "tt of sem 5 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 5th sem ,3rd year of DS:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_bc8d94c004cd4b3aa69d81dff8e1c112.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-sixth sem",
+                        "patterns": [
+                                "sixth sem of ds",
+                                "6th sem of ds",
+                                "tt of sem 6 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 6th sem ,3rd year of DS:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_6f0fee1bc3ce44eba9e3cf86dda3e238.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-finalyear",
+                        "patterns": [
+                                "final year of ds",
+                                "4th year of ds",
+                                "tt of 4th year ds",
+                                "tt of final year ds",
+                                "tt of fourth year ds"
+                        ],
+                        "responses": [
+                                "select sem:-\n sem seventh of ds, \n sem eighth of ds"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-seventh sem",
+                        "patterns": [
+                                "seventh sem of ds",
+                                "7th sem of ds",
+                                "tt of sem 7 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 7th sem ,final year of DS:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_ef14ed2b56784de5a8f7bf1c65c1b155.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS-eighth sem",
+                        "patterns": [
+                                "eight sem of ds",
+                                "8th sem of ds",
+                                "tt of sem 8 of ds"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 8th sem ,final year of Ds:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_fb8e8d94d738485caba7f6f6caf4fbde.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DS_SYLLABUS",
+                        "patterns": [
+                                "d4",
+                                "syllabus of DS"
+                        ],
+                        "responses": [
+                                "follow this link to know about Syllabus of Data Science :-\nhttps://www.umit.ac.in/_files/ugd/db66c0_e7c743a695e8453e8aac26cfb6c58981.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"DS-HOD",
+                        "patterns":[
+                          "d5",
+                          "hod of DS",
+                          "ds hod",
+                          "hod of computer data science"
+            
+                        ],
+                        "responses":[
+                          "The HOD of Data Science is Mr. Rajesh Kolte  "
+                        ],
+                        "context_set": ""
+                },
+            
+
+
+                {
+                        "tag": "GE & AS",
+                        "patterns": [
+                                "1.f",
+                                "GE & As",
+                                "general engineering",
+                                "General Engineering and Applied Science"
+                        ],
+                        "responses": [
+                                "select exactly what do you wanna know: \nf1.general information of GE & AS,\nf2.faculty of GE & AS,\nf3.Time table of GE & AS,\nf4.Inducation program of GE & AS,\nf5.Hod of GE & AS"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-GENERAL",
+                        "patterns": [
+                                "f1",
+                                "general information of GE & AS",
+                                "general information of ge & as",
+                                "general information of GE & AS"
+                        ],
+                        "responses": [
+                                "follow this link to know about GE & AS :-https://www.umit.ac.in/general-engineering  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-FACULTY",
+                        "patterns": [
+                                "f2",
+                                "faculty of ge & as"
+                        ],
+                        "responses": [
+                                "follow this link to know about Faculty of GE & AS :- https://www.umit.ac.in/ge-faculty"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-TT",
+                        "patterns": [
+                                "f3",
+                                "Timetable of ge & as",
+                                "tt of 1st year",
+                                "tt of first year",
+                                "Timetable general engineering and applied science",
+                                "general engineering and applied science tt",
+                                "general engineering and applied science tt",
+                                "GENERAL ENGINEERING AND APPLIED SCIENCE TT",
+                                "tt of general engineering and applied science"
+                        ],
+                        "responses": [
+                                "select from following:-\ntt of division a, \ntt of division b, \ntt of division c "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-Divison A",
+                        "patterns": [
+                                "tt of division a ",
+                                "division a tt",
+                                "Timetable of division A ",
+                                "tt of division a"
+                        ],
+                        "responses": [
+                                "select sem:-\n first sem of div A, \n second sem  of div A"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div A-first  sem",
+                        "patterns": [
+                                "timetable of first sem of div A",
+                                "1st sem of div A timetable",
+                                "tt of sem 1 of div A",
+                                "first sem of div a",
+                                "1st sem of div a",
+                                "tt of sem 1 of div a"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 1st sem ,Division A of GE & AS:- https://www.umit.ac.in/_files/ugd/b1b53e_5a63210e613148e08abfbaafa9bdc402.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div A-second  sem",
+                        "patterns": [
+                                "timetable of second sem of div A",
+                                "2nd sem of div A timetable",
+                                "tt of sem 2 of div A",
+                                "second sem of div a",
+                                "2nd sem of div a",
+                                "tt of sem 2 of div a"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 2nd sem, Division A of GE & AS:-https://www.umit.ac.in/_files/ugd/6d1dcf_3419e90940034df294515ebaf7f2fe75.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-Divison B",
+                        "patterns": [
+                                "tt of division b ",
+                                "Timetable of division B ",
+                                "tt of division b"
+                        ],
+                        "responses": [
+                                "select sem:-\n first sem of div B, \n second sem of div B"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div B-first sem",
+                        "patterns": [
+                                "timetable of first sem of div b",
+                                "1st sem of div b timetable",
+                                "tt of sem 1 of div B",
+                                "first sem of div b",
+                                "1st sem of div b",
+                                "tt of sem 1 of div b"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 1st sem ,Division B of GE & AS:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_27d314f7547d46feb3f3a059b707a32c.pdf "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div B-second sem",
+                        "patterns": [
+                                "timetable of second sem of div b",
+                                "2nd sem of div b timetable",
+                                "tt of sem 2 of div B",
+                                "second sem of div b",
+                                "2nd sem of div b",
+                                "tt of sem 2 of div b"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 2nd sem, Division B of GE & AS:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_7b794e9f06664fd4899413f043ffce83.pdf "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "GE & AS-Divison C",
+                        "patterns": [
+                                "tt of division c of ge & as",
+                                "Timetable of division c of ge & as",
+                                "tt of ge & as of division c"
+                        ],
+                        "responses": [
+                                "select sem:-\n first sem of div C, \n second sem of div C"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div C sem",
+                        "patterns": [
+                                "timetable of 1st sem of div c",
+                                "1st sem of div c timetable",
+                                "1st sem of div C",
+                                "first sem of div C",
+                                "tt of sem 1 of div C"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 1st sem ,Division C of GE & AS:-\nhttps://www.umit.ac.in/_files/ugd/b1b53e_72c6d4ffa6d345a6864faec00e334779.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "div C-second sem",
+                        "patterns": [
+                               "timetable of second sem of div c",
+                                "2nd sem of div c timetable",
+                                "second sem of div C",
+                                "2nd sem of div C",
+                                "tt of sem 2 of div C"
+                        ],
+                        "responses": [
+                                "visit following link to know about timetable of 2nd sem, Division C of GE & AS:-\nhttps://www.umit.ac.in/_files/ugd/6d1dcf_aaf24fd291494bbc8223a4fd517e4b54.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"GE & AS-HOD",
+                        "patterns":[
+                          "g5",
+                          "hod of GE & AS",
+                          "ge & as hod",
+                          "hod of general engineering and applied science"
+            
+                        ],
+                        "responses":[
+                          "The HOD of General Engineering and Applied Science is Ms. Sharmila A. K   "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"HOD",
+                        "patterns":[
+                          "HOD",
+                          "head of department"
+            
+                        ],
+                        "responses":[
+                          "To know about HOD of particular department select category:-\nHod of CE,\nHod of IT,\nHod of CST,\nHod of ENC,\nHod of DS,\nHod of GE & AS"
+                        ],
+                        "context_set": ""
+                },
+            
+
+
+
+                {
+                        "tag": "admission",
+                        "patterns": [
+                                "what is the process of admission",
+                                "what is the admission process",
+                                "How to take admission in your college",
+                                "What is the process for admission",
+                                "2",
+                                "admission",
+                                "admission process"
+                        ],
+                        "responses": [
+                                "Select following category:- \n2.1 GENERAL INFORMATION RELATED TO ADMISSION, \n2.2 CONTACT DETAILS FOR ADMISSION, \n2.3 DOCUMENTS, \n2.4 FEE, \n2.5 PROCEDURE, \n2.6 ELIGIBILITY CRITERIA, \n2.7 CUTOFF "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ADMISSION-GENERAL",
+                        "patterns": [
+                                "GENERAL INFORMATION RELATED TO ADMISSION ",
+                                "admission information",
+                                "2.1"
+                        ],
+                        "responses": [
+                                " To know general details regarding admission follow following link:- \n https://www.umit.ac.in/admissions "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ADMISSION_CONTACT",
+                        "patterns": [
+                                "2.2",
+                                "CONTACT DETAILS FOR ADMISSION ",
+                                "Contact details for admission"
+                                
+                        ],
+                        "responses": [
+                                " following are contact details for admission:- \n contact Mr. Yeshwant Kale +91 9422044057  \nemail id admissionumit21@gmail.com  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "DOCUMENTS",
+                        "patterns": [
+                                "CONTACT DETAILS FOR ADMISSION ",
+                                "what document required during admission",
+                                "doc",
+                                "What are the certificates to be attached with the application form",
+                                "2.3"
+                        ],
+                        "responses": [
+                                " visit following link to know about documentation:- \nhttps://www.umit.ac.in/_files/ugd/db66c0_dc722518276b485e97dd35853c4d527f.pdf"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "FEE",
+                        "patterns": [
+                                "2.4",
+                                "fee ",
+                                "what are fee structure",
+                                "What are the fees of the B.Tech program at UMIT?",
+                                "fee for it",
+                                "what are fees for all branches"
+                        ],
+                        "responses": [
+                                " visit following link to know about fee structure:- \nhttps://www.umit.ac.in/_files/ugd/db66c0_c7f0b40de0874873b032384eb3aedc4f.pdf  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "PROCEDURE",
+                        "patterns": [
+                                "2.5",
+                                "procedure ",
+                                "what are the admission procedure",
+                                "admission procedure",
+                                "procedure of admission"
+                        ],
+                        "responses": [
+                                " The admission procedure will be carried out as per the rules prescribed by the Directorate of Technical Education, Government of Maharashtra, including the eligibility criteria, Please visit MAHACET website www.mahacet.org for eligibility and rules.\n\nThe candidate interested in securing admission under Institute Level quota and vacant seats (if any), in this college, should apply with the prescribed application form available in the college office as per the schedule notified by the college from time to time.\n\nContact Us: admissionumit21@gmail.com and office@umit.sndt.ac.in  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ELIGIBILITY-CRITERIA",
+                        "patterns": [
+                                "2.6",
+                                "ELIGIBILITY-CRITERIA",
+                                "what are the ELIGIBILITY-CRITERIA",
+                                "ELIGIBILIY"
+                        ],
+                        "responses": [
+                                " select the category of student :- \nA.for Maharashtra State Candidate or \nB.for All India Candidate  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "for Maharashtra State",
+                        "patterns": [
+                                "A",
+                                "ELIGIBILITY-CRITERIA for Maharashtra State",
+                                "what are the ELIGIBILITY-CRITERIA for Maharashtra State",
+                                "ELIGIBILIY for Maharashtra State ",
+                                "for Maharashtra State "
+                        ],
+                        "responses": [
+                                "Eligibility criteria for Maharashtra State Candidate :\nThe candidate should be an Indian National and should have passed the HSC (Std.XII) Examination of Maharashtra State Board of Secondary and Higher Secondary Education or its equivalent examination with subjects English, Physics, Mathematics and Chemistry/Biotechnology /Biology/ Technical Vocational subject.\n\nSecured minimum 45 % marks (minimum 40 % marks, in case of Backward class categories and Persons with Disability – candidates belonging to Maharashtra State only) in the subjects Physics, Mathematics and Chemistry/Biotechnology/Biology/ Technical Vocational subjects added together. "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "All India Candidates",
+                        "patterns": [
+                                "B",
+                                "Eligibility Criteria for All India Candidates",
+                                "what are the Eligibility Criteria for All India Candidates",
+                                "Eligibility  for All India Candidates",
+                                "for All India Candidatese "
+                        ],
+                        "responses": [
+                                "Eligibility Criteria for All India Candidates (Maharashtra & OMS) :\nCandidate should be an Indian National and should have passed the HSC (Std.XII) Examination of Maharashtra State Board of Secondary and Higher Secondary Education or its equivalent examination with subjects English, Physics, Mathematics and Chemistry/Biotechnology /Biology/ Technical Vocational subject.\nSecured minimum 45 % marks (minimum 40 % marks, in case of Backward class categories and Persons with Disability – candidates belonging to Maharashtra State only) in the subjects Physics, Mathematics and Chemistry/Biotechnology/Biology/ Technical Vocational subjects added together."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CUT-OFF",
+                        "patterns": [
+                                "2.7",
+                                "cut-off ",
+                                "what are cut off",
+                                "cut off of previous year",
+                                "What are the cut-off merit scores for different courses at the institute",
+                                "cut off of this year"
+                        ],
+                        "responses": [
+                                " The admission procedure will be carried out as per the rules prescribed by the Directorate of Technical Education, Government of Maharashtra, including the eligibility criteria, Please visit MAHACET website www.mahacet.org for eligibility and rules.\n\nThe candidate interested in securing admission under Institute Level quota and vacant seats (if any), in this college, should apply with the prescribed application form available in the college office as per the schedule notified by the college from time to time.\nvisit following link to know about previous years cut off:-https://www.umit.ac.in/_files/ugd/db66c0_af3ff755f6bf4ede8608b284deaa98c0.pdf\nPlease visit the UMIT website for further details. \nContact Us: admissionumit21@gmail.com and office@umit.sndt.ac.in  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "COUNCIL-COMMITTEE",
+                        "patterns": [
+                                "3",
+                                "student body",
+                                "what are student's councils",
+                                "councils",
+                                "committee"
+                        ],
+                        "responses": [
+                                "select type of council: \n3.1 Technical council, \n3.2 Non-Technical council"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Technical-council",
+                        "patterns": [
+                                "3.1",
+                                "what are technical councils",
+                                "how many technical councils are there in UMIT"
+                        ],
+                        "responses": [
+                                "UMIT has following Technical Councils.\n\n3.a.Student's Council \n\n3.b.IEEE Council\n\n3.c.CSI Council\n\n3.d.ACM Chapter\n\n3.e.Geek for Geeks Chapter\n\n3.f.Developer Student Club \nType name or given number of council to know futhure"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Student's Council",
+                        "patterns": [
+                                "3.a",
+                                "what is Student's Council",
+                                "how many members are there in  Students Council?",
+                                "stuco",
+                                "students council",
+                                "Student's Council",
+                                "how many members are there in  Students Council?"
+                        ],
+                        "responses": [
+                                "The Student Council is the main student body of the college. It endeavors to improve the institute and a student's overall campus experience. The Council strives to solve the students' problems by acting as a liaison between the students and the faculty.\n\nTo know detail about Student's Council visit following link:-https://www.umit.ac.in/student-council-umit \n\nAlso you can watch following youtube video :- https://youtu.be/jqJrOnetJ4I"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IEEE Council",
+                        "patterns": [
+                                "3.b",
+                                "what is IEEE Council",
+                                "how many members are there in IEEE Council?",
+                                "ieee",
+                                "IEEE Council",
+                                "what is full form of ieee",
+                                "how many members are there in IEEE Council?"
+                        ],
+                        "responses": [
+                                "\nIEEE Chapter\nIEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE's highly cited publications, conferences, technology standards, and professional and educational activities.  IEEE UMIT conducts a wide range of events aimed at providing a platform for its student members to interactively widen their network while developing their technical aptitude and inspire a sense of scientific inquisitiveness among them.\n\nTo know more about IEEE Council visit following link:https://www.umit.ac.in/ieee\n\nAlso you can watch following youtube video:https://youtu.be/o58pI96Jiwg"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "CSI Council",
+                        "patterns": [
+                                "3.c",
+                                "what is CSI Council",
+                                "how many members are there in CSI Council?",
+                                "csi",
+                                "CSI Council",
+                                "how many members are there in CSI Council?",
+                                "what is full form of csi"
+                        ],
+                        "responses": [
+                                "\nCSI Council\nComputer Society of India is the first and largest body of computer professionals in India. It has 71 chapters across India, 418 student branches, and more than 90,000 members.  Usha Mittal Institute of Technology being a part of C.S.I. Mumbai Chapter organises various events and workshops throughout the year under the guidance of CSI Mumbai Chapter\n\nTo know more about CSI Council visit following link:https://www.umit.ac.in/csi\n\nAlso you can watch following youtube video:https://youtu.be/NRVbTp-dba4"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "ACM Council",
+                        "patterns": [
+                                "3.d",
+                                "what is ACM Council",
+                                "how many members are there in ACM Council?",
+                                "acm",
+                                "ACM Council",
+                                "how many members are there in ACM Council?",
+                                "what is full form of acm"
+                        ],
+                        "responses": [
+                                "\nACM Council\nThe Association for Computing Machinery (ACM) founded in 1947, based in New York, USA, is the oldest body of computer professionals in the world. The Computer Science, Engineering and Management students of SNDT Women’s University are part of the chapter since 1999. The SNDT-ACM Chapter is the first ACM Students Chapter in Mumbai. It aims to develop leadership qualities and management skills in addition to enhancing technical competence in the members. It has been the endeavor of the Chapter to bring innovation in its functioning so that it can reach out to broader spectrum of students and keep the chapter active.\n\nTo know more about ACM Council visit following link:,https://www.umit.ac.in/acm \n\nAlso you can watch following youtube video:https:https://youtu.be/AXl68f_bgus"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": " Geek for Geeks Chapter Council",
+                        "patterns": [
+                                "3.e",
+                                "what is Geek for Geeks Chapter Council",
+                                "how many members are there in Geek for Geeks Chapter Council?",
+                                "Geek for Geeks Chapter",
+                                "gfg",
+                                "gfg Council",
+                                "how many members are there in gkg Council?",
+                                "what is full form of gfg"
+                        ],
+                        "responses": [
+                                "\nGeekforGeeks UMIT Chapter\nGeeksforGeeks UMIT Student Chapter is an ever growing community for students interested in Computer Science and other core technical competencies. It focuses on sharing knowledge in a peer-to-peer learning environment and learn building effective and optimized solutions for real world problems.\n\nTo know more about GFG Council visit following link:https://www.umit.ac.in/geekforgeeks"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Developer Student Council",
+                        "patterns": [
+                                "3.f",
+                                "what is Developer Student Council",
+                                "how many members are there in Developer Student Council?",
+                                "Developer Student Club",
+                                "Developer Student Council",
+                                "dsc",
+                                "dsc Council",
+                                "how many members are there in dsc?",
+                                "what is full form of Developer Student Council"
+                        ],
+                        "responses": [
+                                "\nGoogle Developer Student Club-UMIT\nGoogle Developer Student Clubs of Usha Mittal Institute Of Technology, powered by Google Developers, is a learning community that aims to inspire intelligent minds in the field of technology. It is open to any student, ranging from amateur developers who are just starting to advanced developers to experts. It is a community for students to connect and collaborate as they solve real-world problems.\n\nTo know more about Developer Student Council visit following link:https://www.umit.ac.in/dsc\n\nAlso you can watch following youtube video:https://youtu.be/kEz_RwRBmCY"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "E-cell Council",
+                        "patterns": [
+                                "3.g",
+                                "what is E-cell Council",
+                                "how many members are there in E-cell Council?",
+                                "E-cell Council",
+                                "E-cell"
+                        ],
+                        "responses": [
+                                "\nE-Cell Council\nElite, the entrepreneurship cell of UMIT, is a non-technical council which provides great opportunities for students to develop and enhance their entrepreneurial and management skills through various ingenious programs. The activities conducted by the E-cell council help, both the organizing as well as the participating students, gain confidence and improve their organizational, management, entrepreneurial, marketing, creative and leadership skills.\\n\\nTo know more about E-cell council visit following link:https://www.umit.ac.in/e-cell\n\nAlso you can watch following youtube video:https://youtu.be/0xhfUF5H0ts "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "NSS Council",
+                        "patterns": [
+                                "3.h",
+                                "what is NSS Council",
+                                "how many members are there in nss ?",
+                                "nss",
+                                "NSS Council"
+                        ],
+                        "responses": [
+                                "\nNSS Chapter\nThe NSS Unit of UMIT constantly seeks young volunteers to help channelize their energies and capabilities towards nation-building activities by organizing them into volunteers groups. National Service Scheme (NSS) has a vital role to play in the personality development of the Students and upliftment of society.  The NSS unit of Usha Mittal Institute of Technology is a force of committed students marching forward to make the world a better place to live in.\n\nTo know more about NSS Council visit following link:https://www.umit.ac.in/nss \n\nAlso you can watch following youtube video:https://youtu.be/R1s6lywYuqg"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "UA^2 Council",
+                        "patterns": [
+                                "3.i",
+                                "what is UA2 Council",
+                                "how many members are there in UA2 ?",
+                                "UA2",
+                                "what is full form of ua2",
+                                "UA2 Council"
+                        ],
+                        "responses": [
+                                "\nUMIT Alumnae Association, is formed in order to foster new and strong bonds between the Alumnae, students and the teachers. It offers student-Alumnae contact, networking services and various events and reunions. \n\nThe unit, as a whole, hopes to bring about a better change with the amalgamation of technology.\\n\\nTo know more about CSI Council visit following link:https://www.umit.ac.in/ua2\n\nAlso you can watch following youtube video:https://youtu.be/Xz5caEmqG2o"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "writers_club",
+                        "patterns": [
+                                "3.j",
+                                "what is The Writers' Club",
+                                "how many members are there in The Writers' Club ?",
+                                " Writers' Club",
+                                "what is full form of  Writers' Club",
+                                "The Writers' Club Council"
+                        ],
+                        "responses": [
+                                "\nThe Writers' Club\nThe writers' club of UMIT is a literature club for the students. It initiated with the thought of adding a fun element to the student's life while fostering their creativity. The club has an integral part in creating the first-ever annual magazine for UMIT. The writers' club encourages the students to stimulate their ideas into ravishing articles. The club accepts all captivating pieces, including technical and non-technical writings.\\n\\nTo know more about CSI Council visit following link:https://www.umit.ac.in/thewritersclub"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Sports_Council",
+                        "patterns": [
+                                "3.k",
+                                "what is Sports Council",
+                                "how many members are there in Sports Council?",
+                                "Sports Council",
+                                "sports club"
+                        ],
+                        "responses": [
+                                "\nSports Council\n\nUsha Mittal Institute of Technology has a vibrant sports council which encourage students to believe in themselves by providing them with a platform for participating in various Intra and Inter-Collegiate indoor and outdoor games. The Sports Council of Usha Mittal Institute Of Technology organized an Collegiate Sports Festival XUBERANCE. Our aim is to Encourage women in field of Sports.. \n\n To know more about Sports Council visit following link:https://www.umit.ac.in/sports \n\n Also you can watch following youtube video:https://youtu.be/PRG8x5hjjaU"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Nontechnical",
+                        "patterns": [
+                                "3.2",
+                                "what are nontechnical councils",
+                                "how many non-technical councils are there in UMIT"
+                        ],
+                        "responses": [
+                                "Usha Mittal Institute of Technology has following Nontechnical Councils:\n3.g.Sports \n3.h.E-cell\n3.i.NSS \n3.j.UA2 \n3.k.The Writers' Club"
+                        ],
+                        "context_set": ""
+                },
+
+
+
+
+                {
+                        "tag": "Contact",
+                        "patterns":[
+                                "Contact details",
+                                "details",
+                                "contact",
+                                "Online details",
+                                "Offline Details",
+                                "Contact information ",
+                                "4"
+                        ],
+                          "responses": [
+                            " Select the mode: \n4.1. Online \n4.2. Offline"
+                        ],
+                        "context_set":""
+                },
+                {
+                        "tag": "Online",
+                        "patterns":[
+                          "4.1",
+                          "number",
+                          "mobile number",
+                          "telephone number",
+                          "email address",
+                          "mailing address",
+                          "landline number",
+                          "address details",
+                          "Online",
+                          "online mode"
+                        ],
+                          "responses":[
+                            "Choose according to your efficiency:\n4.a Principle, \n4.b Admission, \n4.c Account Section,\n4.d Examination Section,\n4.e Office,\n4.f placement contact"
+                        ],
+                            "context_set":""
+                },
+                {
+                        "tag": " Principle",
+                        "patterns":[
+                          "contact of Principle",
+                          "4.a",
+                          "Principle contact number",
+                          "Principle mail address"
+                        ],
+                          "responses":[
+                            "Below are the required contact details :\n Name: Dr Shikha nema \n Contact Number : 02226605183 \n Email id : sanjay.pawar@umit.sndt.ac.in"
+                        ],
+                            "context_set":""
+                },
+                {
+                        "tag": "Admission",
+                        "patterns":[
+                          "4.b",
+                          "Admission contact",
+                          "Admission mail address",
+                          "Admission contact details"
+                        ],
+                          "responses":[
+                            "Below are the required contact details :\n Name: Mr Yeshwant Kale \n Contact Number : +91 9422044057 \n Email id : admissionumit21@gmail.com"
+                        ],
+                            "context_set":""
+                 },
+                 {
+                        "tag": "Account Section",
+                        "patterns":[
+                          "4.c",
+                          "Account Section contact",
+                          "Account Section Email address",
+                          "Account Section phone number ",
+                          "Admission contact details"
+                          ],
+                          "responses":[
+                            "Below are the required contact details :\n Name: Mr Gajanan Joshi \n Contact Number : +91 9766642228 \n Email id : accounts@umit.sndt.ac.in"
+                        ],
+                            "context_set":""
+                },
+                {
+                        "tag": "Exam Section",
+                        "patterns":[
+                          "4.d",
+                          "Exam Section contact number",
+                          "exam sextion contact",
+                          "Exam section information",
+                          "Exam section mail address",
+                          "Exam section contact details"
+                          ],
+                          "responses":[
+                            "Below are the required contact details :\n Contact Number : 022-26605179 \n Email id : unitexam@gmail.com"
+                        ],
+                            "context_set":""
+                },
+                {
+                        "tag": "Office",
+                        "patterns":[
+                          "4.e",
+                          "Office",
+                          "Office information",
+                          "Office nmail address",
+                          "Office contact details"
+                          ],
+                          "responses":[
+                            "Below are the required contact details :\n Contact Number : 02_26606040 \n Email id : office@umit.sndt.ac.in"
+                            ],
+                            "context_set":""
+                },
+                {
+                        "tag": "Placement_contact",
+                        "patterns":[
+                          "4.f",
+                          "Placement information",
+                          "Placement mail address",
+                          "contact details of placement"
+                          ],
+                          "responses":[
+                            "Below are the required contact details :\nName: Dr, Vilas Kharat \nTel: +91 9820161954 \nemail id: placements@umit.sndt.ac.in "
+                        ],
+                            "context_set":""
+                },
+                
+                {
+                        "tag": "Offline",
+                        "patterns":[
+                        "4.2",
+                        "Offline",
+                        "Location details",
+                        "address detail",
+                        "landmark"
+                        ],
+                        "responses":[
+                        "Choose according to your efficiency: \n4.g Railway, \n4.h Bus, \n4.i Auto/Taxi\n4.j metro"
+                        ],
+                        "context_set":""
+                },
+                
+                {
+                        "tag": "Railway",
+                        "patterns":[
+                        "4.g",
+                        "Railway",
+                        "Railway line",
+                        "Railway Station",
+                        "local line"
+                        ],
+                        "responses":[
+                        "Select the railway line : \nR.1 Western Rail, \nR.2 Central Rail, \nR.3 Harbour rail"
+                        ],
+                        "context_set":""    
+                        },
+                
+                {
+                        "tag": "Western Rail",
+                        "patterns":[
+                        "R.1",
+                        "wr",
+                        "Western Railway"
+                        ],
+                        "responses":[
+                        "Santacruz is the nearest  western railway station to the university"
+                        ],
+                        "context_set":""
+                },
+                
+                {
+                        "tag": "Central Rail",
+                        "patterns":[
+                        "R.2",
+                        "cr",
+                        "Central railway"
+                        ],
+                        "responses":[
+                        " Changing the local from central line Dadar via to western line till Santacruz"
+                        ],
+                        "context_set":""
+                },
+                
+                {
+                        "tag": "Harbour Rail",
+                        "patterns":[
+                        "R.3",
+                        "hr",
+                        "Harbour railway"
+                        ],
+                        "responses":[
+                        "Santacruz is the nearest  harbour railway station to the university"
+                        ],
+                        "context_set":""
+                },
+                
+                {
+                        "tag": "Bus",
+                        "patterns":[
+                        "4.h",
+                        "Bus",
+                        "Nearest Bus stop",
+                        "Best number",
+                        "Bus number"
+                        ],
+                        "responses":[
+                        " S.N.D.T college JUHU is the nearest bus stop to the university.\nListed buses are available near the University:-28,56,224,231,255.\n231 bus is avilable from Santacruz Staion.\nfor more detail you can install Chalo or M-indicator app"
+                        ],
+                        "context_set":""
+                },
+                
+                {
+                        "tag": "Auto/Taxi",
+                        "patterns":[
+                        "4.i",
+                        "Auto",
+                        "Taxi"
+                        ],
+                        "responses":[
+                        "Share and Normal Auto are available from Santacruz Staion to University"
+                        ],
+                        "context_set":""
+                },
+
+                {
+                        "tag": "metro",
+                        "patterns":[
+                                "4.i",
+                                "nearest metro station",
+                                "what is the nearest metro station",
+                                "which metro station is near",
+                                "closest metro station",
+                                "which metro station is closest",
+                                "nearby metro stations",
+                                "metro",
+                                "metro station nearby"
+                        ],
+                        "responses":[
+                                "Andheri nearest metro station.\nFrom andheri you can catch bus or auto,also you can travel by western railway"
+                        ]
+                },
+      
+
+
+                {
+                        "tag":"PLACEMENT",
+                        "patterns":[
+                          "Placement",
+                          "internship",
+                          "placement and internship",
+                          "5"
+            
+                        ],
+                        "responses":[
+                          "Select category you wanna know Placement: \ng1.placement guidelines, \ng2.testimonials, \ng3.alumni network, \ng4.placement contact"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"PLACEMENT-PLACEMENT GUIDELINES",
+                        "patterns":[
+                          "g1",
+                          "placement guidelines"
+                     
+                        ],
+                        "responses":[
+                          "Follow this link to know about placement guidelines :-\nhttps://www.umit.ac.in/placements-guidelines  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"PLACEMENT-TESTIMONIALS",
+                        "patterns":[
+                          "g2",
+                          "PLACEMENT-TESTIMONIALS",
+                          "testimonials"
+                     
+                        ],
+                        "responses":[
+                          "Follow this link to know about testimonials :-\nhttps://www.umit.ac.in/testimonials  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"PLACEMENT-ALUMNI NETWORK",
+                        "patterns":[
+                          "g3",
+                          "PLACEMENT ALUMNI NETWORK",
+                          "alumni network"
+                     
+                        ],
+                        "responses":[
+                          "Follow this link to know about alumni network :-\nhttps://www.umit.ac.in/ua2  "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Placement_contact",
+                        "patterns":[
+                          "4.f",
+                          "Placement information",
+                          "Placement mail address",
+                          "contact details of placement",
+                          "g4",
+                          "contact of placement",
+                          "placement contact"
+                     
+                        ],
+                        "responses":[
+                          "Following is the contact of Placement Coordinator Dr, Vilas Kharat:-\nTel: +91 9820161954\nEmail-id: placements@umit.sndt.ac.in  "
+                        ],
+                        "context_set": ""
+                },
+
+                {
+                        "tag":"OTHER",
+                        "patterns":[
+                          "6",
+                          "no",
+                          "nonono",
+                          "other"
+                     
+                        ],
+                        "responses":[
+                          "okay,may i know what do you wannna know?"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "hours",
+                        "patterns": [
+                                "timing of college",
+                                "what is college timing",
+                                "working days",
+                                "when are you guys open",
+                                "what are your hours",
+                                "hours of operation",
+                                "when is the college open",
+                                "college timing",
+                                "what about college timing",
+                                "is college open on saturday",
+                                "tell something about college timing",
+                                "what is the college  hours",
+                                "when should i come to college",
+                                "when should i attend college",
+                                "what is my college time",
+                                "college timing",
+                                "timing college"
+                        ],
+                        "responses": [
+                                "College is open 8.30am-5.15pm Monday-Friday!"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "name1",
+                        "patterns": [
+                               "who made you",
+                               "who is  yours owner",
+                               "who is your developer",
+                               "yours developers",
+                               "who developed you",
+                               "owner"
+                        ],
+                        "responses": [
+                                "My Owners/Devlopers are Sakshi khanvilkar,komal kamble,poorva kalekar who are students in umit in 3rd year btech it"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "name",
+                        "patterns": [
+                                "name",
+                                "your name",
+                                "do you have a name",
+                                "what are you called",
+                                "what is your name",
+                                "what should I call you",
+                                "whats your name?",
+                                "what are you",
+                                "who are you",
+                                "who is this",
+                                "what am i chatting to",
+                                "who am i taking to",
+                                "what are you"
+                        ],
+                        "responses": [
+                                "You can call me UMIT_CHATBOT.",
+                                "I'm CHATBOT."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "hostel",
+                        "patterns": [
+                                "hostel facility",
+                                "hostel servive",
+                                "hostel location",
+                                "hostel address",
+                                "hostel facilities",
+                                "hostel fees",
+                                "Does college provide hostel",
+                                "Is there any hostel",
+                                "Where is hostel",
+                                "do you have hostel",
+                                "do you guys have hostel",
+                                "hostel",
+                                "what is the hostel fee",
+                                "how to get in hostel",
+                                "what is the hostel address",
+                                "how far is hostel from college",
+                                "hostel college distance",
+                                "where is the hostel",
+                                "how big is the hostel",
+                                "distance between college and hostel",
+                                "distance between hostel and college"
+                        ],
+                        "responses": [
+                                "Our College does provide hostel facility"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "floors",
+                        "patterns": [
+                                "size of campus",
+                                "building size",
+                                "How many floors does college have",
+                                "floors in college",
+                                "floors in college",
+                                "how tall is CBPGEC college building",
+                                "floors"
+                        ],
+                        "responses": [
+                                "UMIT Engineering College has total 5 floors and ground. "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "library",
+                        "patterns": [
+                                "is there any library",
+                                "library facility",
+                                "library facilities",
+                                "do you have library",
+                                "does the college have library facility",
+                                "college library",
+                                "where can i get books",
+                                "book facility",
+                                "Where is library",
+                                "Library",
+                                "Tell me about library",
+                                "how many libraries"
+                        ],
+                        "responses": [
+                                "There is one library on third and fourth floor,\nTo know more visit:- https://www.umit.ac.in/library"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "facilities",
+                        "patterns": [
+                                "What facilities college provide",
+                                "College facility",
+                                "What are college facilities",
+                                "facilities",
+                                "facilities provided"
+                        ],
+                        "responses": [
+                                "UMIT provides Lab with internet connection, smart classroom, Auditorium, library"
+                        ],
+                        "context_set": ""
+                },
+      
+                {
+                        "tag": "infrastructure",
+                        "patterns": [
+                                "how is college infrastructure",
+                                "infrastructure",
+                                "college infrastructure"
+                        ],
+                        "responses": [
+                                "UMIT Engineering College has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection,\nTo know more visit:- https://www.umit.ac.in/it-infrastructure"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "canteen",
+                        "patterns": [
+                                "food facilities",
+                                "canteen facilities",
+                                "canteen facility",
+                                "is there any canteen",
+                                "Is there a cafetaria in college",
+                                "Does college have canteen",
+                                "Where is canteen",
+                                "where is cafetaria",
+                                "canteen",
+                                "Cafetaria"
+                        ],
+                        "responses": [
+                                "UMIT doesn't have canteen facility"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "principal",
+                        "patterns": [
+                                "what is the name of principal",
+                                "whatv is the principal name",
+                                "principal name",
+                                "Who is college principal",
+                                "Where is principal's office",
+                                "principal",
+                                "name of "
+                        ],
+                        "responses": [
+                                "Dr. Shikha Nema is college principal who is available on Ground floor"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "college intake",
+                        "patterns": [
+                                "max number of students",
+                                "number of seats per branch",
+                                "number of seats in each branch",
+                                "maximum number of seats",
+                                "maximum students intake",
+                                "What is college intake",
+                                "how many stundent are taken in each branch",
+                                "seat allotment",
+                                "seats"
+                        ],
+                        "responses": [
+                                "For IT,CST,ENC/EE,CE and DS we take 80 per branch "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "uniform",
+                        "patterns": [
+                                "college dress code",
+                                "college dresscode",
+                                "what is the uniform",
+                                "can we wear casuals",
+                                "Does college have an uniform",
+                                "Is there any uniform",
+                                "uniform",
+                                "what about uniform",
+                                "do we have to wear uniform"
+                        ],
+                        "responses": [
+                                "UMIT does not have uniform"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "random",
+                        "patterns": [
+                                
+                                "I love you",
+                                "Will you marry me",
+                                "Do you love me"
+                        ],
+                        "responses": [
+                                "I am not program for this please ask appropriate query.\nPlease select category so that i can help you? \n1.COURSE and DEPARTMENT, \n2.ADMISSION, \n3.COUNCIL and COMMITTEES, \n4.CONTACT, \n5.PLACEMENT and INTERNSHIP, \n6.OTHER "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "swear",
+                        "patterns": [
+                                "fuck",
+                                "fuck off",
+                                "piss off",
+                                "jerk",
+                                "jackass",
+                                "shit",
+                                "clown shit",
+                                "clown",
+                                "bitch",
+                                "shut up",
+                                "hell",
+                                "stupid",
+                                "idiot",
+                                "dumb ass",
+                                "asshole",
+                                "fucker"
+                        ],
+                        "responses": [
+                                "please use appropriate language.\nPlease select category so that i can help you? \n1.COURSE and DEPARTMENT, \n2.ADMISSION, \n3.COUNCIL and COMMITTEES, \n4.CONTACT, \n5.PLACEMENT and INTERNSHIP, \n6.OTHER ",
+                                "Maintaining decency would be appreciated.\nPlease select category so that i can help you? \n1.COURSE and DEPARTMENT, \n2.ADMISSION, \n3.COUNCIL and COMMITTEES, \n4.CONTACT, \n5.PLACEMENT and INTERNSHIP, \n6.OTHER "
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "vacation",
+                        "patterns": [
+                                "holidays",
+                                "when will semester starts",
+                                "when will semester end",
+                                "when is the holidays",
+                                "list of holidays",
+                                "about vacations",
+                                "about holidays",
+                                "When is vacation",
+                                "When is holidays",
+                                "how long will be the vacation"
+                        ],
+                        "responses": [
+                                "Please refer academic calendar :- https://www.umit.ac.in/academic-calendar"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "salutaion",
+                        "patterns": [
+                                "okk",
+                                "okie",
+                                "nice work",
+                                "well done",
+                                "good job",
+                                "thanks for the help",
+                                "Thank You",
+                                "its ok",
+                                "Thanks",
+                                "k",
+                                "yess",
+                                "ok",
+                                "okay"
+                        ],
+                        "responses": [
+                                "I am glad I helped you",
+                                "welcome, anything else i can assist you with?"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "task",
+                        "patterns": [
+                                "what can you do",
+                                "what are the thing you can do",
+                                "things you can do",
+                                "what can u do for me",
+                                "how u can help me",
+                                "why i should use you"
+                        ],
+                        "responses": [
+                                "I can answer to low-intermediate questions regarding college",
+                                "You can ask me questions regarding college, and i will try to answer them"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"ragging",
+                        "patterns":[
+                                "ragging",
+                                "is ragging practice active in college",
+                                "does college have any antiragging facility",
+                                "is there any ragging cases",
+                                "is ragging done here",
+                                "ragging juniors",
+                                "ragging history",
+                                "ragging incidents"
+                                
+                        ],
+                        "responses": [
+                                "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+                        ]
+      
+                },
+                {
+                        "tag":"general queries1",
+                        "patterns":[
+                                "What is the DTE Code of Usha Mittal Institute of Technology (UMIT)",
+                                "UMIT belongs to which University"
+                                
+                                
+                        ],
+                        "responses": [
+                                "DTE Code is 3035",
+                                "UMIT is managed by SNDT Women’s University."
+                        ]
+
+                },
+                {
+                        "tag":"general queries2",
+                        "patterns":[
+                                "UMIT belongs to which University"
+                                
+                                
+                        ],
+                        "responses": [
+                                "UMIT is managed by SNDT Women’s University."
+                        ]
+                },
+                {
+                        "tag":"cap round",
+                        "patterns":[
+                                "What is CAP round"
+                                
+                                
+                        ],
+                        "responses": [
+                                "CAP stands for Centralized Admission Process. It is conducted by the Directorate of Technical Education or Government of Maharashtra. Allotment of seats through CAP are not done by the institute. Seats are allotted through an online portal of DTE. "
+                        ]
+                },
+                {
+                        "tag":"general queries3",
+                        "patterns":[
+                                "Why should I take admission at UMIT"
+                                
+                        ],
+                        "responses": [
+                                "\nOnly autonomous engineering college in SNDT Women’s University. \nHigher probability of placements.\nHelping students to build overall personality by providing opportunity in the area of sports, cultural activities. \nThe teachers are very well qualified and dedicated"
+                        ]
+                },
+                {
+                        "tag":"cap round",
+                        "patterns":[
+                                "What is CAP round"
+                                
+                                
+                        ],
+                        "responses": [
+                                "CAP stands for Centralized Admission Process. It is conducted by the Directorate of Technical Education or Government of Maharashtra. Allotment of seats through CAP are not done by the institute. Seats are allotted through an online portal of DTE. "
+                        ]
+                },
+                {
+                        "tag":"general queries4",
+                        "patterns":[
+                                "Can I take help from agents for application"
+                                
+                                
+                        ],
+                        "responses": [
+                                "NO, Beware of agents for taking admission. We do not have an agent. Refer to the UMIT website regularly. "
+                        ]
+                },
+                {
+                        "tag":"general queries5",
+                        "patterns":[
+                                "Is it mandatory to submit all required documents in original"   
+                        ],
+                        "responses": [
+                                "Yes. Your admission is confirmed only when you pay the fees as applicable and submit all the required documents in original. If you don’t have all the originals while taking admission then you will be given some time to submit those documents. "
+                        ]
+                },
+                {
+                        "tag":"general queries6",
+                        "patterns":[
+                                "Is it possible to change the branch in the second year"
+                        ],
+                        "responses": [
+                                "Technically Yes. There should be a vacancy at that point of time. Allotment will be on a first year merit list basis. It is not recommended to take admission in a particular branch on the futuristic assumptions of change in branch. "
+                ]
+                },
+                {
+                        "tag":"general queries7",
+                        "patterns":[
+                                "I got very few marks and I'm not sure whether I will get admission at UMIT?"
+                        ],
+                        "responses": [
+                                "Do not make assumptions based on prior cut-offs. You should apply and keep patience till the last cutoff date declared by DTE. Sometimes seat may get vacant at the last moment and you may get a chance to fill that seat. So do not lose hope. "
+                ]
+                },
+                {
+                        "tag":"general queries8",
+                        "patterns":[
+                                "I have not applied at UMIT and the admission process is over. Now will I get a seat at UMIT?"
+                        ],
+                        "responses": [
+                                "No. Once the admission process is over then there is no further scope for admissions. However you should always see notifications by DTE. "
+                ]
+                },
+                {
+                        "tag":"general queries9",
+                        "patterns":[
+                                "When notification for Institute Quota admissions will come."
+                        ],
+                        "responses": [
+                                "Please visit the UMIT website for further details. "
+                ]
+                },
+                {
+                        "tag":"general queries10",
+                        "patterns":[
+                                "To whom should we contact for information related to vacant seats,document submissions, dates & deadlines, fees payment etc."
+                        ],
+                        "responses": [
+                                "type ADMISSION or Refer website www.umit.ac.in .  "
+                ]
+                },
+             
+                {
+                        "tag":"payment of fees2",
+                        "patterns":[
+                                "Am I eligible for any kind of scholarship or concession in fees?"
+                        ],
+                        "responses": [
+                                "Yes. You are entitled for scholarship / concession fees depending upon the category / caste of the candidate and subject to the condition that you should have been admitted through CAP rounds only. "
+                ]
+                },
+                {
+                        "tag":"payment of fees3",
+                        "patterns":[
+                                "Can I get an Educational loan?"
+                        ],
+                        "responses": [
+                                "Yes, several Banks offer Education Loans for payment of fees. Please contact Banks for more details in this regards "
+                ]
+                },
+                {
+                        "tag":"payment of fees4",
+                        "patterns":[
+                                "Which is the nearest bank to campus?"
+                        ],
+                        "responses": [
+                                "Canara Bank is located in the campus.There are many banks located near the campus. "
+                ]
+                },
+                {
+                        "tag":"hostel and other facilities1",
+                        "patterns":[
+                                "Is hostel accommodation provided at UMIT?"
+                        ],
+                        "responses": [
+                                "Yes, Hostel allotment is strictly done on merit basis only due to limited availability of seats. "
+                ]
+                },
+                {
+                        "tag":"hostel and other facilities2",
+                        "patterns":[
+                                "Are there any accommodation facilities nearby college?"
+                        ],
+                        "responses": [
+                                "Yes. There are few private apartments and guest houses. You need to find accommodation on your own. However, if any help is required, the institute willtry to help you. "
+                ]
+                },
+                {
+                        "tag":"hostel and other facilities3",
+                        "patterns":[
+                                "Do you have internet facilities at the college?"
+                        ],
+                        "responses": [
+                                "Yes we do have an internet facility. Entire institute is WiFi enabled. Also the internet is available on all computers in the institute. "
+                ]
+                },
+               
+            
+                {
+                        "tag":"placements1",
+                        "patterns":[
+                                "What is the average campus placement?",
+                                "average campus placement"
+                        ],
+                        "responses": [
+                                "UMIT has always been in the preferred list of industries for campus placement and on an average 80% students are placed every year. "
+                ]
+                },
+                {
+                        "tag":"placements2",
+                        "patterns":[
+                                "Which are the companies that come here for recruitment?",
+                                "companies recruitment"
+                        ],
+                        "responses": [
+                                "Accenture, Barclays, Colgate, Capgemini, Infosys, Microsoft, Deloitte, Oracle, Qunnox, Northgate, Nibble Technology, Xoriant, Persistent, Target, Ericsson, Mu Sigma. "
+                ]
+                },
+                {
+                        "tag":"placements3",
+                        "patterns":[
+                                "What is the difference in placement policy between various branches?"
+                        ],
+                        "responses": [
+                                "Placement policy is the same for all branches. In most of the companies students from all branches are eligible to apply; except few depending on the job profile. "
+                ]
+                },
+                {
+                        "tag":"academics1",
+                        "patterns":[
+                                "What are college timings?"
+                        ],
+                        "responses": [
+                                "Administrative offices remain open from 9.00 am to 5.00 pm. But classes start at 8.30 am. "
+                ]
+                },
+                {
+                        "tag":"academics2",
+                        "patterns":[
+                                "Does the college follow a Semester or Annual system?"
+                        ],
+                        "responses": [
+                                "the college follow a Semester pattern"
+                ]
+                },
+                {
+                        "tag":"academics3",
+                        "patterns":[
+                                "What is the medium of instruction in class?",
+                                "medium of instruction "
+                        ],
+                        "responses": [
+                                "English. "
+                ]
+                },
+                {
+                        "tag":"academics4",
+                        "patterns":[
+                                "How are the teachers at UMIT?",
+                                " teachers at UMIT"
+                        ],
+                        "responses": [
+                                "The teachers are very well qualified and dedicated. Many of them are Ph.D. or doing their Ph.D. All teachers are very helpful and proactive. "
+                ]
+                },
+                {
+                        "tag":"academics6",
+                        "patterns":[
+                                "Are there any elective subjects offered during the programme?",
+                                "elective subjects"
+                        ],
+                        "responses": [
+                                "Yes.there elective subjects offered during the programme "
+                ]
+                },
+                {
+                        "tag":"academics7",
+                        "patterns":[
+                                "How is the sports culture and extracurricular activities?"
+                        ],
+                        "responses": [
+                                "We believe in the overall development of students. Apart from academics students are motivated to participate in extracurricular activities. "
+                ]
+                },
+                {
+                        "tag":"umit",
+                        "patterns":[
+                                "umit",
+                                "what is umit",
+                                "information about umit"
+                        ],
+                        "responses":[
+                                "UMIT has been approved by the apex bodies like the All India Council for Technical Education (AICTE) and the Directorate of Technical Education (DTE). It envisages an educational complex with state of the art laboratories, workshops and computer center equipped with the latest equipment. It also envisions close liaison with the Industry and handling live Industry Projects as part of the curriculum.\n To know more about umit visit followng link:-https://www.umit.ac.in/about-umit"
+                        ]
+                },
+                {
+                        "tag":"sndt",
+                        "patterns":[
+                                "sndt",
+                                "what is sndt",
+                                "information about sndt"
+                        ],
+                        "responses":[
+                                "SNDT Women’s University is the first Women’s university in India as well as in South-East Asia. The University was founded by Maharshi Dr. Dhondo Keshav Karve in 1916 for a noble cause of Women’s Education. The first five women graduated in 1921 from this University. The University Headquarters is in Churchgate Campus, Mumbai and the other two campuses of this University are at Juhu, Mumbai and Karve Road, Pune.\nTo know more about sndt visit following link:-https://www.umit.ac.in/about-sndt"
+                        ]
+                }
+
+                
+        
+           
+                
+      
+      
+      
+            
+      
+      
+      
+      
+
+
+        ]
+}
